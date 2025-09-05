@@ -8,7 +8,7 @@ import com.rodrigo.ms.suspecious_activity_email.dto.MessageEventDTO;
 @Service
 public class ConsumerService {
     
-
+    
 
     @KafkaListener(topics = "suspicious_activity_email_event", groupId = "suspicious_activity_group", containerFactory = "concurrentKafkaListenerContainerFactory")
     public void consumerMessage(MessageEventDTO message){
