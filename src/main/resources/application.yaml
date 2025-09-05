@@ -6,3 +6,6 @@ spring:
 
     kafka:
         bootstrap-servers: localhost:9092
+
+kafka:
+    group-id: suspicious_activity_group
